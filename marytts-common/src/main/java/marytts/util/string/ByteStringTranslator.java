@@ -35,7 +35,7 @@ public class ByteStringTranslator {
 	 * The maximum number of values that this translator can handle. This is the highest possible number that we can still
 	 * represent as an unsigned byte.
 	 */
-	public static final int MAXNUM = 255;
+	public static final int MAXNUM = 450;
 
 	private ArrayList<String> list;
 	private Map<String, Byte> map;
