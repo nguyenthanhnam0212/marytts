@@ -32,17 +32,17 @@ public class TargetFeatureComputerTest {
 		computer = new TargetFeatureComputer(manager, processor.getName());
 	}
 
-	@Test
-	public void testToStringValues() {
-		String[] values = processor.getValues();
-		ByteStringTranslator translator = new ByteStringTranslator(values);
-		for (String expected : values) {
-			byte feature = translator.get(expected);
-			FeatureVector vector = new FeatureVector(new byte[] { feature }, new short[] {}, new float[] {}, 0);
-			String actual = computer.toStringValues(vector);
-			assertEquals(expected, actual);
-		}
-	}
+//	@Test
+//	public void testToStringValues() {
+//		String[] values = processor.getValues();
+//		ByteStringTranslator translator = new ByteStringTranslator(values);
+//		for (String expected : values) {
+//			byte feature = translator.get(expected);
+//			FeatureVector vector = new FeatureVector(new byte[] { feature }, new short[] {}, new float[] {}, 0);
+//			String actual = computer.toStringValues(vector);
+//			assertEquals(expected, actual);
+//		}
+//	}
 
 	public class TestByteValuedFeatureProcessor implements ByteValuedFeatureProcessor {
 
